@@ -13,6 +13,7 @@ body {
   position: absolute;
   top: 20%;
   background: transparent;
+  width: 500px;
 }
 
 .task-input-box {
@@ -20,6 +21,8 @@ body {
   opacity: 0.8;
   border-radius: 10px;
   padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 input {
@@ -43,9 +46,62 @@ button i {
   transition: 0.3s;
   color: green;
   padding: 2px 10px;
+  cursor: pointer;
 }
 
 #add-task:hover {
   background: green;
   color: #fff;
+}
+
+.task-container {
+  margin-top: 5px;
+}
+
+.task-container .tasks {
+  background: rgba(215, 215, 215, 0.9);
+  display: flex;
+  border-radius: 5px;
+  padding: 2px;
+  border: 1px solid black;
+  margin: 3px;
+}
+
+.task-container .tasks li {
+  list-style: none;
+  padding-left: 5px;
+  flex-grow: 1;
+  font-size: 1.3rem;
+}
+
+.tasks button {
+  margin: 2px;
+  opacity: 0.6;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  background: rgba(215, 215, 215, 0.9);
+}
+
+.tasks .check-btn {
+  color: orangered;
+  border: 1px solid orangered;
+  transition: 0.3s;
+}
+
+.tasks .check-btn:hover {
+  opacity: 1;
+  background: orangered;
+  color: #fff;
+}
+
+.tasks .delete-btn {
+  color: red;
+  border: 1px solid red;
+}
+
+.tasks .delete-btn:hover {
+  opacity: 1;
+  background: red;
+  color: white;
 }
